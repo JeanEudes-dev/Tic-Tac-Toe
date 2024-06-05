@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Layout, Menu } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
+import 'antd/dist/reset.css';
 import './App.css';
+import Game from './Components/Game';
 
-function App() {
+const { Header, Content, Footer } = Layout;
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+          <Menu.Item key="1">
+            <a href="https://github.com/JeanEudes-dev/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+              <GithubOutlined /> GitHub
+            </a>
+          </Menu.Item>
+        </Menu>
+        <div className="logo"><h2>Tic-Tac-Toe</h2></div>
+      </Header>
+      <Content style={{ padding: '50px', display: 'flex', justifyContent: 'center' }}>
+        <Game />
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Tic-Tac-Toe ©2024 Jean-Eudes-dev</Footer>
+    </Layout>
   );
-}
+};
 
 export default App;
