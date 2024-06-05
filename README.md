@@ -2,7 +2,7 @@
 
 # Tic-Tac-Toe
 
-![Tic-Tac-Toe Preview](https://JeanEudes-dev.github.io/Tic-Tac-Toe)
+[Tic-Tac-Toe Preview](https://JeanEudes-dev.github.io/Tic-Tac-Toe)
 
 ## About
 This project is a popular Tic-Tac-Toe game built with React and TypeScript, utilizing Ant Design components for a polished and professional interface. The game includes a single-player mode where you play against an AI opponent.
